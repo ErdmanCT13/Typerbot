@@ -1,0 +1,23 @@
+{
+  "name": "typistjs",
+  "version": "0.1.0",
+  "description": "Flexible library for programmatic typing.",
+  "main": "Typist.js",
+  "scripts": {
+    "test": "null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErdmanCT13/TypistJS.git"
+  },
+  "keywords": [
+    "Async/Await",
+    "Javascript"
+  ],
+  "author": "Carl Erdman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ErdmanCT13/TypistJS/issues"
+  },
+  "homepage": "https://github.com/ErdmanCT13/TypistJS#readme"
+}

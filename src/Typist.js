@@ -351,18 +351,18 @@ class Typist {
         this._frozen = true
         this._clearBlinkStartTimeout()
         this._stopCursorBlink()
-        this._cursorElement.parentNode.removeChild(this._cursorElement)
+        this._cursorElement.parentNode.removeChild(this._cursorElement);
     }
     unfreeze(){
         this._frozen = false
         if(this._characterEntries[this._cursorPosition]){
-            this._cursorElement.parentNode.insertBefore(this._cursorElement, this._characterEntries[this._cursorPosition])
+            this._cursorElement.parentNode.insertBefore(this._cursorElement, this._characterEntries[this._cursorPosition]);
             
         }
         else{
-            this._fieldElement.appendChild(this._cursorElement)
+            this._fieldElement.appendChild(this._cursorElement);
         }
-        this._startCursorBlink()
+        this._startCursorBlink();
     }
     isFrozen(){
         return this._frozen ? true : false;
@@ -379,11 +379,3 @@ class Typist {
 
 
 export default Typist
-
-
-// if(module){
-//     module.exports = Typist
-// }
-// else{
-//     export default Typist
-// }

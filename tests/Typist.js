@@ -159,7 +159,7 @@ class Typist {
         })
     }
 
-    type(string, options) { // like type but it takes in an element and recursively outputs textnodes at every element layer
+    async type(string, options) { // like type but it takes in an element and recursively outputs textnodes at every element layer
         if (typeof string != "string") { throw new Error("Typist.type only accepts string values at positon 1") };
         var settings = Object.assign(Object.assign(Typist.defaultSettings(), this._settings), options);
         var fragment;
@@ -221,7 +221,7 @@ class Typist {
         }
     }
 
-    move(keystrokes, options) { // remember that cursor position is always right adjacent to the last character entered, so after entering the first character, the cursor position is 1
+    async move(keystrokes, options) { // remember that cursor position is always right adjacent to the last character entered, so after entering the first character, the cursor position is 1
         if (typeof keystrokes != "number") {
             throw new Error("Typist.move only accepts number values at position 1")
         }
