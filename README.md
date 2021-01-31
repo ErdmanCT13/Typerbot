@@ -27,11 +27,9 @@ CDN - `https://cdn.jsdelivr.net/npm/typerbot@latest/typerbot.min.js`
 
 ### Typerbot(fieldElement, [options])
 
-##### Parameters -
+**fieldElement**: `HTMLElement`, Element in which text will be entered
 
-fieldElement: `HTMLElement`, Element in which text will be entered
-
-options: `Object`
+**options**: `Object`
 
 ``` Javascript
 	var settings = {} // put your settings here
@@ -67,9 +65,9 @@ options: `Object`
 
 Insert characters into the field element.
 
-- stringInput: `String`, string that will be entered into the field element
+- **stringInput**: `String`, string that will be entered into the field element
 
-- options: `Object`, settings used for given input. These will overwrite the default settings.
+- **options**: `Object`, settings used for given input. These will overwrite the default settings.
 
 
 ------------
@@ -79,9 +77,9 @@ Insert characters into the field element.
 
 Delete a specified number of characters from the field element with the cursor as the starting point.
 
-- numberOfCharactersToDelete: `Number`, number of characters that will be deleted.
+- **numberOfCharactersToDelete**: `Number`, number of characters that will be deleted.
 
-- options: `Object`, settings used for given input. These will overwrite the default settings.
+- **options**: `Object`, settings used for given input. These will overwrite the default settings.
 
 
 ------------
@@ -91,9 +89,9 @@ Delete a specified number of characters from the field element with the cursor a
 
 Deletes characters until the provided delimiter is encountered.
 
-- delimiter: `String`, Delimiter used to determine when to stop deleting characters.
+- **delimiter**: `String`, Delimiter used to determine when to stop deleting characters.
 
-- options: `Object`, settings used for given input. These will overwrite the default settings.
+- **options**: `Object`, settings used for given input. These will overwrite the default settings.
 
 ------------
 
@@ -101,9 +99,9 @@ Deletes characters until the provided delimiter is encountered.
 
 Move the cursor a specified number of positions.
 
-- numberOfCharactersToMove: `Number`, Element in which text will be entered
+- **numberOfCharactersToMove**: `Number`, Element in which text will be entered
 
-- options: `Object`, settings used for given input. These will overwrite the default settings.
+- **options**: `Object`, settings used for given input. These will overwrite the default settings.
 
 
 ------------
@@ -113,7 +111,7 @@ Move the cursor a specified number of positions.
 
 Moves cursor to the end of the field element.
 
-- options: `Object` , settings used for given input. These will overwrite the default settings.
+- **options**: `Object` , settings used for given input. These will overwrite the default settings.
 
 
 ------------
