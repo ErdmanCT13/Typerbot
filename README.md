@@ -35,7 +35,7 @@ options: `Object`
 
 ``` Javascript
 	var settings = {} // put your settings here
-	var myTyperBot = new TyperBot(Document.querySelector(".field-element"), settings) // default settings will be 
+	var myTyperBot = new TyperBot(Document.querySelector(".field-element"), settings) // default settings will be used if none are provided
 ```
 
 ### Default Options
