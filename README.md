@@ -49,8 +49,8 @@ options: `Object`
 | cursorBlinkInterval | amount of time in milliseconds between cursor blinks | Number | 800 |
 | cursorClass | CSS class to be applied to the cursor element | String | "typist-cursor" |
 | html | will HTML passed into Typerbot.type() be parsed as HTML or as plaintext | Boolean | Hello |
-| cursor | controls whether the cursor is visible | Boolean | Hello |
-| cursorString | character that appears as cursor | String | Hello |
+| cursor | controls whether the cursor is visible | Boolean | true |
+| cursorString | character that appears as cursor | String |"&#124;" |
 | afterLineComplete | callback that executes at the end of Typebot.type() | Function | `() => {}` |
 | beforeLineComplete | callback that executes at the start of Typebot.type() | Function |  `() => {}` |
 | beforeKeyInput |  callback that executes after Typerbot before a character is entered/deleted or the cursor is moved | Function |  `() => {}` |
@@ -63,90 +63,88 @@ options: `Object`
 
 </br>
 
-##### Typerbot.type(stringInput, [options])
+##### Typerbot.type(stringInput, [options]) : `Promise`
 
 Insert characters into the field element.
 
-- fieldElement: `HTMLElement`, Element in which text will be entered
+- stringInput: `String`, string that will be entered into the field element
 
-- options: `Object`
+- options: `Object`, settings used for given input. These will overwrite the default settings.
 
 
 ------------
 
 
-
-##### Typerbot.delete(numberOfCharactersToDelete, [options])
+##### Typerbot.delete(numberOfCharactersToDelete, [options])  : `Promise`
 
 Delete a specified number of characters from the field element with the cursor as the starting point.
 
-- fieldElement: `HTMLElement`, Element in which text will be entered
+- numberOfCharactersToDelete: `Number`, number of characters that will be deleted.
 
-- options: `Object`
-
-
-------------
-
-
-
-##### Typerbot.deleteUntilDelimiter(delimiter, [options])
-
-
-- delimiter: `String`, Element in which text will be entered
-
-- options: `Object`
+- options: `Object`, settings used for given input. These will overwrite the default settings.
 
 
 ------------
 
 
+##### Typerbot.deleteUntilDelimiter(delimiter, [options]) : `Promise`
 
-##### Typerbot.move(numberOfcharactersToMove, [options])
+Deletes characters until the provided delimiter is encountered.
 
-Move the cursor a specified number of positions
+- delimiter: `String`, Delimiter used to determine when to stop deleting characters.
 
+- options: `Object`, settings used for given input. These will overwrite the default settings.
+
+------------
+
+##### Typerbot.move(numberOfcharactersToMove, [options]) : `Promise`
+
+Move the cursor a specified number of positions.
 
 - numberOfCharactersToMove: `Number`, Element in which text will be entered
 
-- options: `Object`
+- options: `Object`, settings used for given input. These will overwrite the default settings.
+
 
 ------------
 
+
+##### Typerbot.moveToEnd([options]) : `Promise`
+
+Moves cursor to the end of the field element.
+
+- options: `Object` , settings used for given input. These will overwrite the default settings.
+
+
+------------
 
 
 ##### Typerbot.clear()
 
-Clear all characters from fieldElement and reset Typerbot internal state
+Clear all characters from fieldElement and resets Typerbot instance internal state.
 
 ------------
-
-
-##### Typerbot.moveToEnd([options])
-
-- options: `Object`
-
-------------
-
 
 
 ##### Typerbot.freeze()
 
-- options: `Object`
+Hides cursor and prevents new inputs methods from being executed. 
+
 
 ------------
-
 
 
 ##### Typerbot.unfreeze()
 
-- options: `Object`
+Reverses the effects of Typerbot.freeze().
+
 
 ------------
 
 
-##### Typerbot.isFrozen()
+##### Typerbot.isFrozen() : `Boolean`
 
-- options: `Object`
+Returns boolean indicating whether or not Typerbot instance is frozen. 
 
 
 
