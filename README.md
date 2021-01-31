@@ -13,7 +13,6 @@ Typerbot is a flexible library designed to mimic keyboard input into any DOM Ele
  - Create visually interesting effects by combining provided callbacks with CSS.
  
 
-
 <h1>API</h1>
 
 #### Installation
@@ -29,9 +28,9 @@ CDN - `https://cdn.jsdelivr.net/npm/typerbot@latest/typerbot.min.js`
 
 ### Typerbot(fieldElement, [options])
 
-**fieldElement**: `HTMLElement`, Element in which text will be entered
+**fieldElement**: `HTMLElement`, Element in which text will be entered.
 
-**options**: `Object`
+**options**: `Object`,  settings used for given input. These will overwrite the default settings.
 
 ``` Javascript
 	var settings = {} // put your settings here
@@ -43,7 +42,7 @@ CDN - `https://cdn.jsdelivr.net/npm/typerbot@latest/typerbot.min.js`
 
 | Property | Description | Type | Default Value |
 | ------------ | ------------ | ------------ | ------------ |
-| keystrokeInterval | controls the speed of inputs in Milliseconds | Number | 200 | 
+| keystrokeInterval | controls the speed of inputs in Milliseconds | Number | 200 |
 | keystrokeDelay | amount of time in milliseconds that Typerbot.move(), Typerbot.delete(), Typerbot.deleteUntilDelimiter(), Typerbot.moveToStart(), Typer.moveToEnd()  and Typerbot.deleteAll() will wait before executing  | Number | 0 |
 | pauseDuration | amount of time in milliseconds that Typerbot.pause() will wait for | Number | 1000 |
 | cursorBlinkInterval | amount of time in milliseconds between cursor blinks | Number | 800 |
@@ -69,7 +68,7 @@ Insert characters into the field element.
 
 - **stringInput**: `String`, string that will be entered into the field element
 
-- **options**: `Object`, settings used for given input. These will overwrite the default settings.
+- **options**: `Object`, settings used for given input. These will overwrite the default settings as well as settings provided in the constructor.
 
 
 ------------
@@ -81,7 +80,7 @@ Delete a specified number of characters from the field element with the cursor a
 
 - **numberOfCharactersToDelete**: `Number`, number of characters that will be deleted.
 
-- **options**: `Object`, settings used for given input. These will overwrite the default settings.
+- **options**: `Object`, settings used for given input. These will overwrite the default settings as well as settings provided in the constructor.
 
 
 ------------
@@ -93,7 +92,7 @@ Deletes characters until the provided delimiter is encountered.
 
 - **delimiter**: `String`, Delimiter used to determine when to stop deleting characters.
 
-- **options**: `Object`, settings used for given input. These will overwrite the default settings.
+- **options**: `Object`, settings used for given input. These will overwrite the default settings as well as settings provided in the constructor.
 
 ------------
 
@@ -103,7 +102,7 @@ Move the cursor a specified number of positions.
 
 - **numberOfCharactersToMove**: `Number`, Element in which text will be entered
 
-- **options**: `Object`, settings used for given input. These will overwrite the default settings.
+- **options**: `Object`, settings used for given input. These will overwrite the default settings as well as settings provided in the constructor.
 
 
 ------------
@@ -113,7 +112,7 @@ Move the cursor a specified number of positions.
 
 Moves cursor to the end of the field element.
 
-- **options**: `Object` , settings used for given input. These will overwrite the default settings.
+- **options**: `Object`, settings used for given input. These will overwrite the default settings as well as settings provided in the constructor.
 
 
 ------------
