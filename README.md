@@ -23,11 +23,11 @@ CDN - `https://cdn.jsdelivr.net/npm/typerbot@latest/typerbot.min.js`
 
 ------------
 
-#### Initialization
+## Initialization
 
-###### Typerbot(fieldElement, [options])
+### Typerbot(fieldElement, [options])
 
-##### Parameters
+##### Parameters -
 
 fieldElement: `HTMLElement`, Element in which text will be entered
 
@@ -38,7 +38,7 @@ options: `Object`
 	var myTyperBot = new TyperBot(Document.querySelector(".field-element"), settings) // default settings will be 
 ```
 
-#### Default Options
+### Default Options
 
 
 | Property | Description | Type | Default Value |
@@ -57,22 +57,19 @@ options: `Object`
 | afterKeyInput | callback that executes after Typerbot after a character is entered/deleted or the cursor is moved | Function |  `() => {}` |
 
 </br>
-
-------------
-
 </br>
 
-#### Methods
+## Methods
 
 </br>
 
 ##### Typerbot.type(stringInput, [options])
 
-##### Parameters
+Insert characters into the field element.
 
-fieldElement: `HTMLElement`, Element in which text will be entered
+- fieldElement: `HTMLElement`, Element in which text will be entered
 
-options: `Object`
+- options: `Object`
 
 
 ------------
@@ -81,11 +78,11 @@ options: `Object`
 
 ##### Typerbot.delete(numberOfCharactersToDelete, [options])
 
-##### Parameters
+Delete a specified number of characters from the field element with the cursor as the starting point.
 
-fieldElement: `HTMLElement`, Element in which text will be entered
+- fieldElement: `HTMLElement`, Element in which text will be entered
 
-options: `Object`
+- options: `Object`
 
 
 ------------
@@ -94,11 +91,10 @@ options: `Object`
 
 ##### Typerbot.deleteUntilDelimiter(delimiter, [options])
 
-##### Parameters
 
-fieldElement: `HTMLElement`, Element in which text will be entered
+- delimiter: `String`, Element in which text will be entered
 
-options: `Object`
+- options: `Object`
 
 
 ------------
@@ -107,35 +103,50 @@ options: `Object`
 
 ##### Typerbot.move(numberOfcharactersToMove, [options])
 
-##### Parameters
+Move the cursor a specified number of positions
 
-numberOfCharactersToMove: `Number`, Element in which text will be entered
 
-options: `Object`
+- numberOfCharactersToMove: `Number`, Element in which text will be entered
 
+- options: `Object`
 
 ------------
 
+
+
+##### Typerbot.clear()
+
+Clear all characters from fieldElement and reset Typerbot internal state
+
+------------
 
 
 ##### Typerbot.moveToEnd([options])
 
-##### Parameters
-
-fieldElement: `HTMLElement`, Element in which text will be entered
-
-options: `Object`
-
+- options: `Object`
 
 ------------
 
 
 
-##### Typerbot.moveToStart([options])
+##### Typerbot.freeze()
 
-##### Parameters
+- options: `Object`
 
-options: `Object`
+------------
+
+
+
+##### Typerbot.unfreeze()
+
+- options: `Object`
+
+------------
+
+
+##### Typerbot.isFrozen()
+
+- options: `Object`
 
 
 
