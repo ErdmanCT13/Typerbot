@@ -2,7 +2,7 @@
 
 What is Typerbot?
 
-TypistJS is a flexible library designed to mimic keyboard input into any DOM Element. Built on `Async/Await` , TypistJS provides an intuitive  API to let developers focus on unleashing their creativity instead of getting lost in the weeds. 
+Typerbot is a flexible library designed to mimic keyboard input into any DOM Element. Built on `Async/Await` , Typerbot provides an intuitive  API to let developers focus on unleashing their creativity instead of getting lost in the weeds. 
 
 ## Features
 
