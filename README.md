@@ -1,6 +1,6 @@
-#####:robot:
 
-# Typerbot
+
+# Typerbot :robot:
 
 What is Typerbot?
 
