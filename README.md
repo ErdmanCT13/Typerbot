@@ -11,6 +11,8 @@ Typerbot is a flexible library designed to mimic keyboard input into any DOM Ele
    provided field element.
  - Use handy utility functions to expedite your development process and write code in a more declarative manner.
  - Create visually interesting effects by combining provided callbacks with CSS.
+ 
+</br>
 
 #API
 
