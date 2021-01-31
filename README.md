@@ -12,7 +12,7 @@ Typerbot is a flexible library designed to mimic keyboard input into any DOM Ele
  - Use handy utility functions to expedite your development process and write code in a more declarative manner.
  - Create visually interesting effects by combining provided callbacks with CSS.
 
-#Documentation
+#API
 
 #### Installation
 
@@ -25,6 +25,18 @@ CDN - `https://cdn.jsdelivr.net/npm/typerbot@latest/typerbot.min.js`
 
 #### Initialization
 
+###### Typerbot(fieldElement, [options])
+
+##### Parameters
+
+fieldElement: `HTMLElement`, Element in which text will be entered
+
+options: `Object`
+
+``` Javascript
+	var settings = {} // put your settings here
+	var myTyperBot = new TyperBot(Document.querySelector(".field-element"), settings) // default settings will be 
+```
 
 #### Default Options
 
@@ -56,15 +68,76 @@ CDN - `https://cdn.jsdelivr.net/npm/typerbot@latest/typerbot.min.js`
 
 ##### Typerbot.type(stringInput, [options])
 
+##### Parameters
+
+fieldElement: `HTMLElement`, Element in which text will be entered
+
+options: `Object`
+
+
+------------
+
+
+
 ##### Typerbot.delete(numberOfCharactersToDelete, [options])
+
+##### Parameters
+
+fieldElement: `HTMLElement`, Element in which text will be entered
+
+options: `Object`
+
+
+------------
+
+
 
 ##### Typerbot.deleteUntilDelimiter(delimiter, [options])
 
+##### Parameters
+
+fieldElement: `HTMLElement`, Element in which text will be entered
+
+options: `Object`
+
+
+------------
+
+
+
 ##### Typerbot.move(numberOfcharactersToMove, [options])
+
+##### Parameters
+
+numberOfCharactersToMove: `Number`, Element in which text will be entered
+
+options: `Object`
+
+
+------------
+
+
 
 ##### Typerbot.moveToEnd([options])
 
+##### Parameters
+
+fieldElement: `HTMLElement`, Element in which text will be entered
+
+options: `Object`
+
+
+------------
+
+
+
 ##### Typerbot.moveToStart([options])
+
+##### Parameters
+
+options: `Object`
+
+
 
 
 
