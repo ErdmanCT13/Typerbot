@@ -63,7 +63,7 @@ options: `Object`
 
 </br>
 
-##### Typerbot.type(stringInput, [options]) : `Promise`
+### Typerbot.type(stringInput, [options]) : `Promise`
 
 Insert characters into the field element.
 
@@ -75,7 +75,7 @@ Insert characters into the field element.
 ------------
 
 
-##### Typerbot.delete(numberOfCharactersToDelete, [options])  : `Promise`
+### Typerbot.delete(numberOfCharactersToDelete, [options])  : `Promise`
 
 Delete a specified number of characters from the field element with the cursor as the starting point.
 
@@ -87,7 +87,7 @@ Delete a specified number of characters from the field element with the cursor a
 ------------
 
 
-##### Typerbot.deleteUntilDelimiter(delimiter, [options]) : `Promise`
+### Typerbot.deleteUntilDelimiter(delimiter, [options]) : `Promise`
 
 Deletes characters until the provided delimiter is encountered.
 
@@ -97,7 +97,7 @@ Deletes characters until the provided delimiter is encountered.
 
 ------------
 
-##### Typerbot.move(numberOfcharactersToMove, [options]) : `Promise`
+### Typerbot.move(numberOfcharactersToMove, [options]) : `Promise`
 
 Move the cursor a specified number of positions.
 
@@ -109,7 +109,7 @@ Move the cursor a specified number of positions.
 ------------
 
 
-##### Typerbot.moveToEnd([options]) : `Promise`
+### Typerbot.moveToEnd([options]) : `Promise`
 
 Moves cursor to the end of the field element.
 
@@ -119,14 +119,14 @@ Moves cursor to the end of the field element.
 ------------
 
 
-##### Typerbot.clear()
+### Typerbot.clear()
 
 Clear all characters from fieldElement and resets Typerbot instance internal state.
 
 ------------
 
 
-##### Typerbot.freeze()
+### Typerbot.freeze()
 
 Hides cursor and prevents new inputs methods from being executed. 
 
@@ -134,7 +134,7 @@ Hides cursor and prevents new inputs methods from being executed.
 ------------
 
 
-##### Typerbot.unfreeze()
+### Typerbot.unfreeze()
 
 Reverses the effects of Typerbot.freeze().
 
@@ -142,7 +142,7 @@ Reverses the effects of Typerbot.freeze().
 ------------
 
 
-##### Typerbot.isFrozen() : `Boolean`
+### Typerbot.isFrozen() : `Boolean`
 
 Returns boolean indicating whether or not Typerbot instance is frozen. 
 
