@@ -1,3 +1,5 @@
+:robot:
+
 # Typerbot
 
 What is Typerbot?
