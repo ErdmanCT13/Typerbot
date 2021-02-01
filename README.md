@@ -68,7 +68,7 @@ CDN - `https://cdn.jsdelivr.net/npm/typerbot@latest/typerbot.min.js`
 
 Insert characters into the field element.
 
-- **stringInput**: `String`, string that will be entered into the field element
+- **stringInput**: `String`, string that will be entered into the field element.
 
 - **options**: `Object`, settings used for given input. These will overwrite the default settings as well as settings provided in the constructor.
 
