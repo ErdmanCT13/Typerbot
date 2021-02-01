@@ -1,4 +1,4 @@
-class Typist {
+class Typerbot {
     constructor(fieldElement, options) {
         this._fieldElement = (fieldElement || options.fieldElement) || (function () {
             throw new Error("No element provided")
@@ -378,4 +378,4 @@ class Typist {
 }
 
 
-export default Typist
+export default Typerbot
