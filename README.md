@@ -48,7 +48,7 @@ CDN - `https://cdn.jsdelivr.net/npm/typerbot@latest/typerbot.min.js`
 | keystrokeDelay | amount of time in milliseconds that Typerbot.move(), Typerbot.delete(), Typerbot.deleteUntilDelimiter(), Typerbot.moveToStart(), Typer.moveToEnd()  and Typerbot.deleteAll() will wait before executing  | Number | 0 |
 | pauseDuration | amount of time in milliseconds that Typerbot.pause() will wait for | Number | 1000 |
 | cursorBlinkInterval | amount of time in milliseconds between cursor blinks | Number | 800 |
-| cursorClass | CSS class to be applied to the cursor element | String | "typist-cursor" |
+| cursorClass | CSS class to be applied to the cursor element | String | "typerbot-cursor" |
 | html | will HTML passed into Typerbot.type() be parsed as HTML or as plaintext | Boolean | Hello |
 | cursor | controls whether the cursor is visible | Boolean | true |
 | cursorString | character that appears as cursor | String |"&#124;" |
