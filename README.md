@@ -148,7 +148,6 @@ Reverses the effects of Typerbot.freeze().
 Returns boolean indicating whether or not Typerbot instance is frozen. 
 
 
-
-
+#Try it out [Here!](http://https://jsfiddle.net/cerdman13/91swhnc2/4/ "Here!")
 
 
