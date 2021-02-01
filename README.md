@@ -21,7 +21,7 @@ Typerbot is a flexible library designed to mimic keyboard input into any DOM Ele
 
 npm - `npm i typerbot`
 
-CDN - `https://cdn.jsdelivr.net/npm/typerbot@latest/typerbot.min.js`
+CDN - `https://cdn.jsdelivr.net/npm/typerbot@latest/dist/typerbot.min.js`
 
 
 ------------
