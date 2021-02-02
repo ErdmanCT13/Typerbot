@@ -6,7 +6,7 @@ What is Typerbot?
 
 Typerbot is a flexible library designed to mimic keyboard input into any DOM Element. Built on `Async/Await` , Typerbot provides an intuitive  API to let developers focus on unleashing their creativity instead of getting lost in the weeds. 
 
-####[Try Typerbot out here!](https://jsfiddle.net/cerdman13/rhfq4u6z/2/ "Try Typerbot out here!")
+#### [Try Typerbot out here!](https://jsfiddle.net/cerdman13/rhfq4u6z/2/ "Try Typerbot out here!")
 
 ## Features
 
