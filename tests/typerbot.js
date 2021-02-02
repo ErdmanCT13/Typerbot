@@ -1,9 +1,9 @@
-class Typist {
+class Typerbot {
     constructor(fieldElement, options) {
         this._fieldElement = (fieldElement || options.fieldElement) || (function () {
             throw new Error("No element provided")
         })()
-        this._settings = options ? Object.assign(Typist.defaultSettings(), options) : Typist.defaultSettings()
+        this._settings = options ? Object.assign(Typerbot.defaultSettings(), options) : Typerbot.defaultSettings()
         this._characterEntries = this._splitUpTextNodes(this._fieldElement) || []
         this._cursorPosition = this._characterEntries.length
         this._cursorElement = document.createElement("span")
@@ -125,7 +125,7 @@ class Typist {
             cursorBlinkInterval: 800,
             delayDuration: 0,
             pauseDuration: 1000,
-            cursorClass: "typist-cursor",
+            cursorClass: "Typerbot-cursor",
             animation: true,
             refreshCursorOnWindowResize: false,
             html: true,
@@ -152,7 +152,7 @@ class Typist {
                     if (typeof this._settings.pauseDuration == "number") {
                         return Math.abs(Math.floor(this._settings.pauseDuration))
                     } else {
-                        throw new Error("Typist.pause only accepts number inputs")
+                        throw new Error("Typerbot.pause only accepts number inputs")
                     }
                 })()
             )
@@ -160,8 +160,8 @@ class Typist {
     }
 
     async type(string, options) { // like type but it takes in an element and recursively outputs textnodes at every element layer
-        if (typeof string != "string") { throw new Error("Typist.type only accepts string values at positon 1") };
-        var settings = Object.assign(Object.assign(Typist.defaultSettings(), this._settings), options);
+        if (typeof string != "string") { throw new Error("Typerbot.type only accepts string values at positon 1") };
+        var settings = Object.assign(Object.assign(Typerbot.defaultSettings(), this._settings), options);
         var fragment;
         if (settings.html) { fragment = this._parseHTMLString(string) }
         else {
@@ -223,9 +223,9 @@ class Typist {
 
     async move(keystrokes, options) { // remember that cursor position is always right adjacent to the last character entered, so after entering the first character, the cursor position is 1
         if (typeof keystrokes != "number") {
-            throw new Error("Typist.move only accepts number values at position 1")
+            throw new Error("Typerbot.move only accepts number values at position 1")
         }
-        var settings = Object.assign(Object.assign(Typist.defaultSettings(), this._settings), options) // create a copy of this._settings and merge options into it
+        var settings = Object.assign(Object.assign(Typerbot.defaultSettings(), this._settings), options) // create a copy of this._settings and merge options into it
         /* first, map current settings onto defaults to create a copy of current settings,
                then map parameter options onto the _settings copy */
         this._beginBlinkStartTimeout()
@@ -257,7 +257,7 @@ class Typist {
     }
 
     async moveToEnd(options) {
-        var settings = Object.assign(Object.assign(Typist.defaultSettings(), this._settings), options)
+        var settings = Object.assign(Object.assign(Typerbot.defaultSettings(), this._settings), options)
         this._beginBlinkStartTimeout()
         await this.pause(settings.keystrokeDelay || this._settings.keystrokeDelay)
         this._stopCursorBlink()
@@ -270,7 +270,7 @@ class Typist {
     }
 
     async moveToStart(options) {
-        var settings = Object.assign(Object.assign(Typist.defaultSettings(), this._settings), options)
+        var settings = Object.assign(Object.assign(Typerbot.defaultSettings(), this._settings), options)
         /* first, map current settings onto defaults to create a copy of current settings,
                then map parameter options onto the _settings copy */
         this._beginBlinkStartTimeout()
@@ -285,7 +285,7 @@ class Typist {
     }
 
     async deleteAll(options) {
-        var settings = Object.assign(Object.assign(Typist.defaultSettings(), this._settings), options)
+        var settings = Object.assign(Object.assign(Typerbot.defaultSettings(), this._settings), options)
         /* first, map current settings onto defaults to create a copy of current settings,
                then map parameter options onto the _settings copy */
         this._beginBlinkStartTimeout()
@@ -305,9 +305,9 @@ class Typist {
 
     async delete(keystrokes, options) {
         if (typeof keystrokes != "number") {
-            throw new Error("Typist.type only accepts number arguments as first parameter")
+            throw new Error("Typerbot.type only accepts number arguments as first parameter")
         }
-        var settings = Object.assign(Object.assign(Typist.defaultSettings(), this._settings), options)
+        var settings = Object.assign(Object.assign(Typerbot.defaultSettings(), this._settings), options)
         /* first, map current settings onto defaults to create a copy of current settings,
                then map parameter options onto the _settings copy */
         this._beginBlinkStartTimeout()
@@ -327,11 +327,11 @@ class Typist {
     }
 
     async deleteUntilDelimiter(delimiter, options) {
-        if(this.isFrozen()){throw new Error("Typist is frozen and cannot handle new inputs")}
+        if(this.isFrozen()){throw new Error("Typerbot is frozen and cannot handle new inputs")}
         if (typeof delimiter != "string") {
-            throw new Error("Typist.deleteUntilDelimiter only accepts string values at position 1")
+            throw new Error("Typerbot.deleteUntilDelimiter only accepts string values at position 1")
         }
-        var settings = Object.assign(Object.assign(Typist.defaultSettings(), this._settings), options)
+        var settings = Object.assign(Object.assign(Typerbot.defaultSettings(), this._settings), options)
         /* first, map current settings onto defaults to create a copy of current settings,
                then map parameter options onto the _settings copy */
         this._beginBlinkStartTimeout()
@@ -378,12 +378,12 @@ class Typist {
 }
 
 
-export default Typist
+export default Typerbot
 
 
 // if(module){
-//     module.exports = Typist
+//     module.exports = Typerbot
 // }
 // else{
-//     export default Typist
+//     export default Typerbot
 // }
