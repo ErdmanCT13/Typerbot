@@ -1,49 +1,22 @@
 {
-  "_from": "typerbot",
-  "_id": "typerbot@0.1.1",
-  "_inBundle": false,
-  "_integrity": "sha512-rydRNE9k9w8X+Avpk5KpNh+qmKquOL0c4IS5QMSv2oSD73YUeyr7IRk53gc7RcSnIwCDeb4rB28iEqw/B2uBHA==",
-  "_location": "/typerbot",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "typerbot",
-    "name": "typerbot",
-    "escapedName": "typerbot",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/typerbot/-/typerbot-0.1.1.tgz",
-  "_shasum": "905dc007ce4d2d50fc1fd5cd2e7d4b758905c366",
-  "_spec": "typerbot",
-  "_where": "/Users/carlerdman/Desktop/Typerbot",
-  "author": {
-    "name": "Carl Erdman"
-  },
-  "bugs": {
-    "url": "https://github.com/ErdmanCT13/Typerbot/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "Flexible library for programmatic typing.",
-  "homepage": "https://github.com/ErdmanCT13/Typerbot#readme",
-  "keywords": [
-    "Async/Await",
-    "Javascript"
-  ],
-  "license": "MIT",
-  "main": "dist/typist.min.js",
   "name": "typerbot",
+  "version": "0.1.6",
+  "description": "Flexible library for programmatic typing.",
+  "main": "typist.min.js",
+  "scripts": {
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ErdmanCT13/Typerbot.git"
   },
-  "scripts": {},
-  "version": "0.1.3"
+  "keywords": [
+    "Async/Await",
+    "Javascript"
+  ],
+  "author": "Carl Erdman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ErdmanCT13/Typerbot/issues"
+  },
+  "homepage": "https://github.com/ErdmanCT13/Typerbot#readme"
 }
